@@ -1,0 +1,49 @@
+* {
+  border: 1px solid red;
+}
+
+.container {
+  display: flex;
+}
+
+section.left {
+  flex: 1 1 40vw;
+  background-image: url("photo.avif");
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+section.left .title {
+  color: white;
+  position: relative;
+  top: 300px;
+  display: flex;
+  justify-content: center;
+}
+.title img {
+  width: 4em;
+  height: 4em;
+  opacity: 1;
+}
+.title p {
+  opacity: 1;
+}
+
+.credit  {
+}
+.credit p {
+  text-align: center;
+}
+
+section.right {
+  flex: 1 1 60vw;
+  height: 100vh;
+}
+
+form .fields {
+  display: flex;
+  flex-wrap: wrap;
+}
