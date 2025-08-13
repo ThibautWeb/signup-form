@@ -1,5 +1,9 @@
 * {
-  border: 1px solid red;
+}
+
+@font-face {
+  font-family: Norse-Bold;
+  src: url(Norse-Bold.otf);
 }
 
 .container {
@@ -22,28 +26,73 @@ section.left .title {
   top: 300px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
 }
 .title img {
-  width: 4em;
-  height: 4em;
-  opacity: 1;
+  width: 6em;
 }
 .title p {
-  opacity: 1;
+  font-family: Norse-Bold, sans-serif;
+  font-size: 4em;
 }
 
 .credit  {
 }
 .credit p {
   text-align: center;
+  font-size: 0.7em;
+  opacity: 0.5;
 }
 
 section.right {
   flex: 1 1 60vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.top {
 }
 
+.top p {
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+form {
+  padding: 1em;
+}
+form legend {
+  font-size: 1.3em;
+  font-weight: bold;
+}
 form .fields {
   display: flex;
   flex-wrap: wrap;
+}
+.fields div {
+  margin: 0.5em;
+}
+.fields label {
+  display: block;
+  font-size: 0.8em;
+}
+.fields input {
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+}
+
+.bottom {
+  margin-top: 1em;
+  padding: 1em;
+}
+
+.bottom button {
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 0.5em 2em;
 }
